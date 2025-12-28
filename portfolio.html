@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather & Air Quality App</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather & Air Quality</h1>
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city (e.g. Paris)" value="London">
+      <button onclick="fetchWeather()">Search</button>
+    </div>
+    
+<nav class="navbar navbar-expand-lg custom-green">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="medical.jpeg" class="header-logo" alt="Logo">
+    
+    </a>
+
+    <div id="result" class="card hidden">
+      <h2 id="city"></h2>
+      <p><strong>Description:</strong> <span id="desc"></span></p>
+      <p><strong>Temperature:</strong> <span id="temp"></span>°C</p>
+      <p><strong>Feels Like:</strong> <span id="feels"></span>°C</p>
+      <p><strong>Wind:</strong> <span id="wind"></span> m/s</p>
+      <p><strong>Rain (3h):</strong> <span id="rain"></span> mm</p>
+      <p><strong>Country:</strong> <span id="country"></span></p>
+
+      <h3>Air Quality (Health)</h3>
+      <p><strong>AQI:</strong> <span id="aqi"></span> - <span id="aqiLevel"></span></p>
+      <p class="tip" id="healthTip"></p>
+    </div>
+
+    <p id="error" class="error hidden"></p>
+  </div>
+  <footer class=" text-white text-center py-3 mt-auto">
+  © 2025 MedLine — Your Health, Our Priority
+</footer>
+
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
+
+
+
+
