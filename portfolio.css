@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #87CEEB, #E0F7FA);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  width: 180px;       
+  height: auto;       
+  display: block;
+  margin: 20px auto;  
+  border-radius: 15px; 
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.search {
+  margin: 30px 0;
+}
+
+input {
+  padding: 12px;
+  width: 60%;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+}
+
+button {
+  padding: 12px 24px;
+  background: #0055ff;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover { background: #0056b3; }
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: left;
+  margin: 20px auto;
+}
+
+h2 { color: #007bff; text-transform: capitalize; }
+h3 { color: #e74c3c; margin-top: 20px; }
+
+.tip {
+  font-weight: bold;
+  color: #c0392b;
+  font-style: italic;
+}
+
+.error { color: red; font-weight: bold; }
+.hidden { display: none; }
+@media (max-width: 600px) {
+  input, button { width: 100%; border-radius: 8px; margin: 10px 0; }
+}
+
+
